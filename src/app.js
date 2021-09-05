@@ -229,10 +229,10 @@ class App{
                     //return;
                 }
                 this.#life.restart({
-                    CHR: groups.CHR.get(),
-                    INT: groups.INT.get(),
-                    STR: groups.STR.get(),
-                    MNY: groups.MNY.get(),
+                    CHR: groups.CHR.get(4000),
+                    INT: groups.INT.get(500),
+                    STR: groups.STR.get(3000),
+                    MNY: groups.MNY.get(222),
                     SPR: 5,
                     TLT: Array.from(this.#talentSelected).map(({id})=>id),
                 });
